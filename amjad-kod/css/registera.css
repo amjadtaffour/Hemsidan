@@ -1,0 +1,393 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  list-style: none;
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 0px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+
+  .main-left {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-inline: auto;
+    justify-content: center;
+  }
+
+  #login-headline {
+    font-size: 1.8em;
+    font-weight: 600;
+    display: block;
+  }
+
+  #login-underline {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+
+  #log-form {
+    display: block;
+    width: 90%;
+    padding: 20px 15px;
+    font-size: 1em;
+    background-color: #eef0f3;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: black;
+    border: none;
+    margin-top: 8px;
+  }
+
+  #log-btn {
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+    box-shadow: 0 10px 30px #431c552d;
+  }
+
+  #no-acc-text {
+    font-size: 1.1em;
+    color: grey;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+  }
+
+  #reg-btn {
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid#000000;
+    margin-top: 10px;
+  }
+
+  .main-right {
+    display: none;
+  }
+
+  /* Registera CSS */
+
+  #reg-form {
+    display: block;
+    width: 100%;
+    height: 20px;
+    padding: 30px 20px;
+    font-size: 1em;
+    background-color: #eef0f3;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: black;
+    border: none;
+    margin-top: 15px;
+    box-sizing: border-box;
+  }
+
+  #role-id {
+    font-size: 1.2em;
+    padding-top: 20px;
+    display: block;
+  }
+
+  #roll {
+    display: block;
+    width: 100%;
+    padding: 16px 5px;
+    font-size: 1em;
+    background-color: #eef0f3;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: black;
+    border: 1.5px solid rgb(201, 201, 201);
+    margin-top: 10px;
+  }
+
+  #reg-btn-form {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #000000;
+    margin-top: 10px;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+
+  .main-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-inline: auto;
+    justify-content: center;
+  }
+
+  .inner-left {
+    margin-inline: 20%;
+  }
+
+  #login-headline {
+    font-size: 1.8em;
+    font-weight: 600;
+    display: block;
+  }
+
+  #login-underline {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+
+  #log-form {
+    display: block;
+    width: 100%;
+    height: 20px;
+    padding: 30px 20px;
+    padding-right: 0;
+    font-size: 1em;
+    background-color: #eef0f3;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: black;
+    border: none;
+    margin-top: 15px;
+    box-sizing: border-box;
+  }
+
+  #log-btn {
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px #431c552d;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  #log-btn:hover {
+    background-color: #000000;
+  }
+
+  #no-acc-text {
+    font-size: 1.1em;
+    color: rgb(71, 71, 71);
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+  }
+
+  #reg-btn {
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    color: #431c55;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    margin-top: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  #reg-btn:hover {
+    background-color: #000000;
+    color: white;
+  }
+
+  .main-right {
+    display: block;
+    width: 50%;
+    position: relative;
+  }
+
+  .main-right img {
+    width: 30rem;
+    height: auto;
+    object-fit: cover;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  header {
+    background-color: aliceblue;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+  .logo {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.8em;
+    margin-left: 20px;
+  }
+  .navigation a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-left: 40px;
+    margin-right: 40px;
+  }
+
+  .navigation a:hover {
+    color: rgb(69, 69, 95);
+  }
+
+  section {
+    padding: 100px 200px;
+  }
+
+  a {
+    list-style: none;
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+  }
+  .main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+
+  .main-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-inline: auto;
+    justify-content: center;
+  }
+
+  .inner-left {
+    margin-inline: 20%;
+  }
+
+  #login-headline {
+    font-size: 2em;
+    font-weight: 600;
+    display: block;
+  }
+
+  #login-underline {
+    font-size: 1.4em;
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+
+  #log-form {
+    display: block;
+    width: 100%;
+    height: 20px;
+    padding: 30px 20px;
+    padding-right: 0;
+    font-size: 1em;
+    background-color: #eef0f3;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: black;
+    border: none;
+    margin-top: 15px;
+    box-sizing: border-box;
+  }
+
+  #log-btn {
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px #431c552d;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  #log-btn:hover {
+    background-color: #000000;
+  }
+
+  #no-acc-text {
+    font-size: 1.1em;
+    color: rgb(71, 71, 71);
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+  }
+
+  #reg-btn {
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    margin-top: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  #reg-btn:hover {
+    background-color: #000000;
+    color: white;
+  }
+
+  .main-right {
+    display: block;
+    width: 50%;
+    height: 100vh;
+    background-image: url(/images/pexels-krivec-ales-547114.jpg);
+    background-size: cover;
+    font-size: 50px;
+  }
+}
